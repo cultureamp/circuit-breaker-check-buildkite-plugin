@@ -1,0 +1,13 @@
+{
+  "@cultureamp/generator-templates": {
+    "version": "0.34.1",
+    "namespace": "@cultureamp/templates:basic",
+    "projectSlug": "rebecca-test-plugin",
+    "description": "plugin test",
+    "team": "sre-enablement",
+    "camp": "FOUNDATIONS",
+    "assetCriticality": "LOW",
+    "dataClassification": "NONE",
+    "lifecycle": "experimental"
+  }
+}
