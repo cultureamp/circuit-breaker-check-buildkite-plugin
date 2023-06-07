@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "rebecca-test-plugin"
+  description: "plugin test"
+  links: # add any links that would be useful here. Dashboards, site urls etc
+    - title: Source
+      url: "https://github.com/cultureamp/rebecca-test-plugin"
+  tags:
+    - camp-foundations
+    - data-classification-none
+    - asset-criticality-low
+  annotations:
+    github.com/project-slug: rebecca-test-plugin
+    github.com/team-slug: cultureamp/sre-enablement
+    buildkite.com/project-slug: culture-amp/rebecca-test-plugin
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sre-enablement
+  generatedFrom: blank-repo-tmpl
