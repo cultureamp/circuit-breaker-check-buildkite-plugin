@@ -1,0 +1,15 @@
+name: Circuit Breaker check
+description: Gives engineers more help when encountering Circuit Breaker message during buildkite deployments
+author: https://github.com/cultureamp
+requirements:
+  - aws
+configuration:
+  properties:
+    org_slug:
+      type: string
+    build_number:
+      type: string
+    job_id:
+      type: string
+  required:
+    - org_slug
