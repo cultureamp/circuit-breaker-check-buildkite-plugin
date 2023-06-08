@@ -11,6 +11,11 @@ BUILD_LOGS=$(curl -H "Authorization: Bearer ${api_key}" \
     "https://api.buildkite.com/v2/organizations/culture-amp/pipelines/${org_slug}/builds/${build_number}/jobs/${build_id}/log")
 
 
+echo "$org_slug"
+echo "$BUILD_LOGS"
+echo "$build_id"
+echo "$build_number"
+
 if echo "$BUILD_LOGS" | grep -q "Circuit Breaker was triggered"; then
   echo "Pattern matched - sending user to confluence page"
 else
