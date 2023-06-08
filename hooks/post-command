@@ -5,9 +5,9 @@ set -e
 org_slug=$BUILDKITE_PIPELINE_SLUG
 build_number=$BUILDKITE_BUILD_NUMBER
 build_id=$BUILDKITE_JOB_ID
+api_key=$NEW_RELIC_API_KEY
 
-
-BUILD_LOGS=$(curl -H "Authorization: Bearer bkua_2bce888b71d9d2dfe37a54fcc700f080587ad68a" \
+BUILD_LOGS=$(curl -H "Authorization: Bearer ${api_key}" \
     "https://api.buildkite.com/v2/organizations/culture-amp/pipelines/${org_slug}/builds/${build_number}/jobs/${build_id}/log")
 
 
