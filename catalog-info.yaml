@@ -1,15 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "rebecca-test-plugin"
-  description: "plugin test"
-  links: # add any links that would be useful here. Dashboards, site urls etc
+  name: rebecca-test-plugin
+  description: plugin test
+  links:
     - title: Source
-      url: "https://github.com/cultureamp/rebecca-test-plugin"
+      url: https://github.com/cultureamp/rebecca-test-plugin
   tags:
-    - camp-foundations
-    - data-classification-none
     - asset-criticality-low
+    - camp-sre
+    - data-classification-none
   annotations:
     github.com/project-slug: rebecca-test-plugin
     github.com/team-slug: cultureamp/sre-enablement
